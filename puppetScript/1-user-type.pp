@@ -278,10 +278,4 @@
   group { "accounting":
     gid => 1012,
   }
-  
-  file { "/var/log/admin-app-log":
-    ensure => "directory",
-    owner  => "root",
-    group  => "wheel",
-    mode   => 750,
-}
+ 
