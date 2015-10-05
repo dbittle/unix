@@ -1,8 +1,24 @@
 # user management (for local users)
  #    1             2		3		4			5		6		7			8			9		10			11		12			13	14			15
 #users mscott, dschrute, jhalpert, pbeesly, abernard, amartin, kkapoor, omartinez, dphilbin, tflenderson, kmalone, plapin, shudson, mpalmer, cbratton.
+ #sudo puppet apply 1-user-type.pp 
+ 
+  
+  
   #1
+  user { 'dbittle':
+    ensure            =>  'present',
+    uid               =>  '2000',
+    gid               =>  '2000',
+    shell             =>  '/bin/bash',
+    home              =>  "/home/dbittle",
+    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    managehome        =>  true,
+     groups     =>  ["managers"]
+  }
+    #1
   user { 'mscott':
+  
     ensure            =>  'present',
     uid               =>  '1100',
     gid               =>  '1100',
@@ -245,7 +261,10 @@
   }
 
   
-  
+      group { "dbittle":
+    gid => 2000,
+  }
+
   
   
   group { "managers":
@@ -259,3 +278,10 @@
   group { "accounting":
     gid => 1012,
   }
+  
+  file { "/var/log/admin-app-log":
+    ensure => "directory",
+    owner  => "root",
+    group  => "wheel",
+    mode   => 750,
+}
