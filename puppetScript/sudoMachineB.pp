@@ -7,8 +7,3 @@ sudo::conf { 'web':
   priority => 10,
   content  => "%web ALL=(ALL) /usr/sbin/service httpd restart",
 }
-
-sudo::conf { 'mpalmer':
-  priority => 10,
-  content  => "%web ALL=(ALL) /usr/sbin/service vsftpd restart",
-}
