@@ -1,12 +1,12 @@
-# user management (for local users)
+# @user management (for local @users)
  #    1             2		3		4			5		6		7			8			9		10			11		12			13	14			15
-#users mscott, dschrute, jhalpert, pbeesly, abernard, amartin, kkapoor, omartinez, dphilbin, tflenderson, kmalone, plapin, shudson, mpalmer, cbratton.
- #sudo puppet apply 1-user-type.pp 
+#@users mscott, dschrute, jhalpert, pbeesly, abernard, amartin, kkapoor, omartinez, dphilbin, tflenderson, kmalone, plapin, shudson, mpalmer, cbratton.
+ #sudo puppet apply 1-@user-type.pp 
  
   
   
   #1
-  user { 'dbittle':
+  @user { 'dbittle':
     ensure            =>  'present',
     uid               =>  '2000',
     gid               =>  '2000',
@@ -17,7 +17,7 @@
      groups     =>  ["managers"]
   }
     #1
-  user { 'mscott':
+  @user { 'mscott':
   
     ensure            =>  'present',
     uid               =>  '1100',
@@ -29,7 +29,7 @@
      groups     =>  ["managers"]
   }
   #2
-    user { 'dschrute':
+    @user { 'dschrute':
     ensure            =>  'present',
     uid               =>  '1101',
     gid               =>  '1101',
@@ -40,7 +40,7 @@
     groups     =>  ["managers"]
   }
 #3
-    user { 'jhalpert':
+    @user { 'jhalpert':
     ensure            =>  'present',
     uid               =>  '1102',
     gid               =>  '1102',
@@ -52,7 +52,7 @@
   }
   
   #4 
-      user { 'pbeesly':
+      @user { 'pbeesly':
     ensure            =>  'present',
     uid               =>  '1103',
     gid               =>  '1103',
@@ -60,10 +60,11 @@
     home              =>  "/home/pbeesly",
     password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
     managehome        =>  true,
+    groups     =>  ["web"]
   }
   
  #5
-      user { 'abernard':
+      @user { 'abernard':
     ensure            =>  'present',
     uid               =>  '1104',
     gid               =>  '1104',
@@ -71,12 +72,12 @@
     home              =>  "/home/abernard",
     password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
     managehome        =>  true,
-    groups     =>  ["sales"]
+    groups     =>  ["sales","web"]
   }
   
   #6
   
-      user { 'amartin':
+      @user { 'amartin':
     ensure            =>  'present',
     uid               =>  '1105',
     gid               =>  '1105',
@@ -87,7 +88,7 @@
     groups     =>  ["accounting"]
   }
   #7
-      user { 'kkapoor':
+      @user { 'kkapoor':
     ensure            =>  'present',
     uid               =>  '1106',
     gid               =>  '1106',
@@ -95,11 +96,12 @@
     home              =>  "/home/kkapoor",
     password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
     managehome        =>  true,
+    groups     =>  ["web"]
   }
    ######
    
    #8
-        user { 'omartinez':
+        @user { 'omartinez':
     ensure            =>  'present',
     uid               =>  '1107',
     gid               =>  '1107',
@@ -110,7 +112,7 @@
     groups     =>  ["accounting"]
   }
    #9
-         user { 'dphilbin':
+         @user { 'dphilbin':
     ensure            =>  'present',
     uid               =>  '1108',
     gid               =>  '1108',
@@ -121,7 +123,7 @@
     groups     =>  ["managers"]
   }
    #10
-         user { 'tflenderson':
+         @user { 'tflenderson':
     ensure            =>  'present',
     uid               =>  '1109',
     gid               =>  '1109',
@@ -131,7 +133,7 @@
     managehome        =>  true,
   }
    #11
-           user { 'kmalone':
+           @user { 'kmalone':
     ensure            =>  'present',
     uid               =>  '1110',
     gid               =>  '1110',
@@ -143,7 +145,7 @@
   }
    #12
    
-            user { 'plapin':
+            @user { 'plapin':
     ensure            =>  'present',
     uid               =>  '1111',
     gid               =>  '1111',
@@ -154,7 +156,7 @@
     groups     =>  ["sales"]
   }
    #13
-            user { 'shudson':
+            @user { 'shudson':
     ensure            =>  'present',
     uid               =>  '1112',
     gid               =>  '1112',
@@ -165,7 +167,7 @@
     groups     =>  ["sales"]
   }
    #14
-              user { 'mpalmer':
+              @user { 'mpalmer':
     ensure            =>  'present',
     uid               =>  '1113',
     gid               =>  '1113',
@@ -176,7 +178,7 @@
   }
    
    #15
-              user { 'cbratton':
+              @user { 'cbratton':
     ensure            =>  'present',
     uid               =>  '1114',
     gid               =>  '1114',
@@ -261,7 +263,7 @@
   }
 
   
-      group { "dbittle":
+    group { "dbittle":
     gid => 2000,
   }
 
@@ -278,4 +280,9 @@
   group { "accounting":
     gid => 1012,
   }
- 
+  
+  group {"web":
+    gid => 1013,
+}
+
+realize User['pbeesly'],User['mscott'], User['dschrute'], User['jhalpert'] ,User['abernard']  , User['amartin'] , User['kkapoor'] , User['omartinez'] , User['dphilbin'] , User['tflenderson'] ,User['kmalone']  , User['plapin'] , User['shudson'] , User['mpalmer'] ,User['cbratton']
