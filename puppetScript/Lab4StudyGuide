@@ -1,0 +1,23 @@
+1. /etc/passwd
+  /etc/shadow
+  /etc/group
+  
+2. new linux user
+useradd
+also know the flags
+-d sets home directory
+-u uid
+-g gid
+-G other groups
+
+3.
+
+Change to give default passwords.
+
+/etc/security/access.config
+somethign like this where you have deny all at the bottom
+:root:ALL
+:wheel:ALL
+
+-:ALL:ALL
+
