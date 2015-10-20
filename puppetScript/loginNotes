@@ -1,0 +1,13 @@
++ : root : ALL
++ : wheel : ALL
++ : mpalmer : ALL
++ : mscott : ALL
+- : ALL : ALL
+
+
+
+
+#in  vim /etc/security/access.conf
+
+authconfig --enablepamaccess --updateall
+ln -sf /etc/pam.d/password-auth-ac /etc/pam.d/password-auth
