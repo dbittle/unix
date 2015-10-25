@@ -3,22 +3,18 @@ host machineB {
   hardware ethernet 00:50:56:b4:3d:81;
   fixed-address 100.64.21.2;
 }
-
 host machineC {
   hardware ethernet 00:50:56:b4:81:f9;
   fixed-address 100.64.21.3;
 }
-
 host machineD {
   hardware ethernet 00:50:56:b4:37:c4;
   fixed-address 100.64.21.4;
 }
-
 host machineE {
   hardware ethernet 00:50:56:b4:db:13;
   fixed-address 10.21.32.2;
 }
-
 host machineF {
   hardware ethernet 00:50:56:b4:5a:68;
   fixed-address 100.64.21.5;
