@@ -1,3 +1,8 @@
+
+
+
+
+
 exec { 'echo "umask 007" >> /home/dbittle/.bash_profile':
 	path => "/bin/",
 }
