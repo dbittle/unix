@@ -14,7 +14,7 @@
     home              =>  "/home/dbittle",
     password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
     managehome        =>  true,
-     groups     =>  ["managers","wheel"]
+     groups     =>  ["managers"]
   }
     #1
   @user { 'mscott':
@@ -37,7 +37,7 @@
     home              =>  "/home/dschrute",
     password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
     managehome        =>  true,
-    groups     =>  ["managers","wheel"]
+    groups     =>  ["managers"]
   }
 #3
     @user { 'jhalpert':
@@ -285,5 +285,4 @@
     gid => 1013,
 }
 
-realize User['dbittle'], User['pbeesly'],User['mscott'], User['dschrute'], User['jhalpert'] ,User['abernard']  , User['amartin'] , User['kkapoor'] , User['omartinez'] , User['dphilbin'] , User['tflenderson'] ,User['kmalone']  , User['plapin'] , User['shudson'] , User['mpalmer'] ,User['cbratton']
-
+realize User['pbeesly'],User['mscott'], User['dschrute'], User['jhalpert'] ,User['abernard']  , User['amartin'] , User['kkapoor'] , User['omartinez'] , User['dphilbin'] , User['tflenderson'] ,User['kmalone']  , User['plapin'] , User['shudson'] , User['mpalmer'] ,User['cbratton'],User['dbittle']
