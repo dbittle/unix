@@ -287,13 +287,3 @@
 
 realize User['dbittle'], User['pbeesly'],User['mscott'], User['dschrute'], User['jhalpert'] ,User['abernard']  , User['amartin'] , User['kkapoor'] , User['omartinez'] , User['dphilbin'] , User['tflenderson'] ,User['kmalone']  , User['plapin'] , User['shudson'] , User['mpalmer'] ,User['cbratton']
 
-
-
-exec { 'echo "umask 007" >> /home/mpalmer/.bash_profile':
-	path => "/bin/",
-}
-
-exec { 'echo "umask 007" >> /home/cbratton/.bash_profile':
-	path => "/bin/",
-}
-

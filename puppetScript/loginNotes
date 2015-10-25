@@ -11,3 +11,5 @@
 
 authconfig --enablepamaccess --updateall
 ln -sf /etc/pam.d/password-auth-ac /etc/pam.d/password-auth
+
+
