@@ -14,7 +14,7 @@
     home              =>  "/home/dbittle",
     password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
     managehome        =>  true,
-     groups     =>  ["managers"]
+     groups     =>  ["managers","wheel"]
   }
     #1
   @user { 'mscott':
@@ -37,7 +37,7 @@
     home              =>  "/home/dschrute",
     password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
     managehome        =>  true,
-    groups     =>  ["managers"]
+    groups     =>  ["managers","wheel"]
   }
 #3
     @user { 'jhalpert':
