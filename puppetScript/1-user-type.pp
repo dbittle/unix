@@ -12,7 +12,7 @@
     gid               =>  '2000',
     shell             =>  '/bin/bash',
     home              =>  "/home/dbittle",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
      groups     =>  ["managers"]
   }
@@ -24,7 +24,7 @@
     gid               =>  '1100',
     shell             =>  '/bin/bash',
     home              =>  "/home/mscott",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
      groups     =>  ["managers"]
   }
@@ -35,7 +35,7 @@
     gid               =>  '1101',
     shell             =>  '/bin/bash',
     home              =>  "/home/dschrute",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
     groups     =>  ["managers"]
   }
@@ -46,7 +46,7 @@
     gid               =>  '1102',
     shell             =>  '/bin/bash',
     home              =>  "/home/jhalpert",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
     groups     =>  ["managers"]
   }
@@ -58,7 +58,7 @@
     gid               =>  '1103',
     shell             =>  '/bin/bash',
     home              =>  "/home/pbeesly",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
     groups     =>  ["web"]
   }
@@ -70,7 +70,7 @@
     gid               =>  '1104',
     shell             =>  '/bin/bash',
     home              =>  "/home/abernard",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
     groups     =>  ["sales","web"]
   }
@@ -83,7 +83,7 @@
     gid               =>  '1105',
     shell             =>  '/bin/bash',
     home              =>  "/home/amartin",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
     groups     =>  ["accounting"]
   }
@@ -94,7 +94,7 @@
     gid               =>  '1106',
     shell             =>  '/bin/bash',
     home              =>  "/home/kkapoor",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
     groups     =>  ["web"]
   }
@@ -107,7 +107,7 @@
     gid               =>  '1107',
     shell             =>  '/bin/bash',
     home              =>  "/home/omartinez",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
     groups     =>  ["accounting"]
   }
@@ -118,7 +118,7 @@
     gid               =>  '1108',
     shell             =>  '/bin/bash',
     home              =>  "/home/dphilbin",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
     groups     =>  ["managers"]
   }
@@ -129,7 +129,7 @@
     gid               =>  '1109',
     shell             =>  '/bin/bash',
     home              =>  "/home/tflenderson",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
   }
    #11
@@ -139,7 +139,7 @@
     gid               =>  '1110',
     shell             =>  '/bin/bash',
     home              =>  "/home/kmalone",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
     groups     =>  ["accounting"]
   }
@@ -151,7 +151,7 @@
     gid               =>  '1111',
     shell             =>  '/bin/bash',
     home              =>  "/home/plapin",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
     groups     =>  ["sales"]
   }
@@ -162,7 +162,7 @@
     gid               =>  '1112',
     shell             =>  '/bin/bash',
     home              =>  "/home/shudson",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
     groups     =>  ["sales"]
   }
@@ -173,7 +173,7 @@
     gid               =>  '1113',
     shell             =>  '/bin/bash',
     home              =>  "/home/mpalmer",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
   }
    
@@ -184,7 +184,7 @@
     gid               =>  '1114',
     shell             =>  '/bin/bash',
     home              =>  "/home/cbratton",
-    password          =>  '$1$LyILhJ.2$R61Nk45TEwIjGPT/1R7gN.',
+    password          =>  '$1$kkep2txP$cuo9VYt9LpLOOvYB.8FZk1',
     managehome        =>  true,
   }
    
